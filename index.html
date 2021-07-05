@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">
+                Survey
+            </h1>
+            <p id="description" class="text-center">
+                Please fill this quick survey
+            </p>
+        </header>
+
+    <form id="survey-form">
+        <div class="form-group">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" class="form-control" placeholder="John" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" class="form-control" placeholder="john78@email.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="number" id="number-label">Age</label>
+            <input type="number" id="number" class="form-control" min="18" max="100" placeholder="27">
+        </div>
+
+        <div class="form-group">
+            <label for="ocupation" id="ocupation-label">Which option best describes your current role?</label>
+            <select name="ocupation" id="dropdown" class="form-control">
+                <option disabled selected value> -- select an option -- </option>
+                <option value="student">Student</option>
+                <option value="full-time">Full Time Job</option>
+                <option value="part-time">Part Time Job</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="radio" id="recommend-label">Would you recommend freeCodeCamp to a friend?</label>
+            <label for="yes">
+                <input type="radio" name="radio" class="input-radio" value="yes">
+                Yes
+            </label>
+            <label for="no">
+                <input type="radio" name="radio" class="input-radio" value="no">
+                No
+            </label>
+            <label for="ns-nr">
+                <input type="radio" name="radio" class="input-radio" value="ns-nr">
+                Not Sure
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label for="checkbox" id="checkbox-label">Which languages do you prefer?</label>
+            <label for="js">
+                <input type="checkbox" value="js" name="prefer" class="input-checkbox">
+                Javascript
+            </label>
+            <label for="py">
+                <input type="checkbox" value="py" name="prefer" class="input-checkbox">
+                Python
+            </label>
+            <label for="java">
+                <input type="checkbox" value="java" name="prefer" class="input-checkbox">
+                Java
+            </label>
+            <label for="ruby">
+                <input type="checkbox" value="ruby" name="prefer" class="input-checkbox">
+                Ruby
+            </label>
+            <label for="c">
+                <input type="checkbox" value="c" name="prefer" class="input-checkbox">
+                C
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label for="suggestions">Care to leave a comment or suggestion?</label>
+            <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+
+    </form>
+</div>
+</body>
+</html>
